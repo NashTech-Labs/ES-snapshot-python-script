@@ -1,0 +1,11 @@
+---
+config:
+  url: "http://localhost:9200"
+  repository: "es-snapshot"
+  bucket:
+    s3: "es-snapshot"
+    region: "us-east-1"
+    snapshot:
+      name: snapshot_1
+      indices:
+        - "index-name"
