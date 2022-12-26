@@ -62,6 +62,6 @@ Run the script as follows:
  export AWS_ACCESS_KEY_ID=**********
  export AWS_SECRET_ACCESS_KEY=***********
  
- ./elastic_configure.py --metadata configuruation/es.yaml
+ ./elastic_configure.py --metadata configuruation/es.yaml --snapshot name
 ````
 
