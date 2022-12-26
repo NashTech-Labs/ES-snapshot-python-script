@@ -5,12 +5,5 @@
        "base_path" : "{{ config.bucket.base_path }}",
        "access_key": "{{ config.bucket.access_key }}",
        "secret_key": "{{ config.bucket.access_secret }}"{% if 'ultron' in config.bucket.base_path %},{% endif %}
-       {% if 'ultron' in config.bucket.base_path %}
-       "chunk_size": "1GB",
-       "max_restore_bytes_per_sec": "8000MB",
-       "max_retries": "30",
-       "buffer_size": "100mb",
-       "max_snapshot_bytes_per_sec": "8000MB"
-       {% endif %}
    }
 }
